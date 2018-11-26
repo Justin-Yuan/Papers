@@ -101,12 +101,89 @@
 
 #### Intro 
 
-- agent to learn active perception, common sense reasoning, language grounding, 
+- agent to learn active perception, common sense reasoning, language grounding, credit assignment 
+- represent each question as a **functional program**, able to be programmatically generated and executed (like CLEVR)
+- EQA generation engine, v1 with 4 question types: location, color, color_room, preposition 
 
 #### Modeling 
 
+- 4 modules: vision, language, navigation, answering 
+- uses Adaptive Computation Time navigator, planner + controller
+- initialize agent via imitation learning 
+- answering module attends to past observed frames, output logits to fixed set of possible answers 
+- rewards: question answering accuracy + reward shaping as distance to target 
+- REINFORCE with baseline -> should have something to encourage exploration 
 
 #### Evaluation 
 
+- mean rank of tround truth in sorted prediction list 
+- navigation accuracy by distance to target at termination 
+- baselines to justify the proposed effectiveness of multi-modal input 
+- oracles: human nav, groud truth shortest path + VQA 
 
 #### Future Work 
+
+- explicit memory to LSTM 
+- encourage exploration 
+- ray tracing with frame rendering 
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Learning a Semantic Prior for Guided Navigation 
+[link](https://eccv18-vlease.github.io/static/papers/learning-a-semantic-prior.pdf), also **Learning and Planning with a Semantic Model**
+
+#### **Need more careful read**
+
+#### Intro 
+
+- assume some low-dimensional discrete semantic signals from perceptino is available 
+- learn a Bayesian model over the semantic structures to provide exploration guidances for subpolicies 
+    - structured prior over semantics of the environment 
+    - efficient inference and planning 
+    - interpretable 
+- structural similarities between environments that can be captured as a probabilistic graphical model over the semantic information 
+
+#### Modeling 
+
+- contextual Markov Decision Process 
+- model as a probabilisticgraph ovear targets
+
+#### Evaluation 
+
+- RoomNav task 
+
+#### Future Work 
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### On Evaluation of Embodied Navigation Agents
+[link](https://arxiv.org/pdf/1807.06757.pdf)
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments
+[link](https://arxiv.org/pdf/1711.07280.pdf)
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### How agents see things: On visual representations in an emergent language game
+[link](https://arxiv.org/pdf/1808.10696.pdf)
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Virtual-to-Real: Learning to Control in Visual Semantic Segmentation
+[link](https://arxiv.org/pdf/1802.00285.pdf)
+
