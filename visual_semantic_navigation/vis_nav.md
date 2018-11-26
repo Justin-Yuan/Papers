@@ -36,7 +36,7 @@
 
 #### Intro
 
-- sourced from **SUNCG Dataset** [
+- sourced from **SUNCG Dataset** 
 - Facebook House3D Environment, targeted navigation 
 - include a table to compare different simulation environments 
 - high throughput rendering 
@@ -72,6 +72,36 @@
 
 #### Intro 
 
+- AI2-THOR -> Unity 3D + Tensorflow direct communication  
+- policy conditions on current state and target, no need to re-train 
+
+#### Modeling 
+
+- observation and target/goal are both images 
+- minimize trajectory length to navigation targets, goal reaching reward + time penalty 
+- Siamese network, map observation and target images to shared embedding space then joint them 
+- scene-specific layers for different scenes
+- A3C, training with parallel threads run different navigation target 
+
+#### Evaluation 
+
+- metric: trajectory length, success rate  
+- t-SNE visualization on observation embeddings, preserves spatial correlation! 
+
+#### Future Work 
+
+- agent to learn physical interaction & object manipulation 
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Embodies Question Answering 
+[link](https://arxiv.org/pdf/1711.11543.pdf)
+
+#### Intro 
+
+- agent to learn active perception, common sense reasoning, language grounding, 
 
 #### Modeling 
 
