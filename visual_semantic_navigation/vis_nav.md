@@ -163,6 +163,18 @@
 ### On Evaluation of Embodied Navigation Agents
 [link](https://arxiv.org/pdf/1807.06757.pdf)
 
+#### Intro 
+
+- propose common task definitions and evaluaoin protocols 
+- Goal specification: PointGoal, ObjectGoal, AreaGoal 
+- Generalization/Exploration: No prior exploration, Pre-recorded prior exploration, Time-limited exploration by the agent
+
+#### Recommendations 
+
+- The agent must be equipped with a special action that indicates that it has concluded the navigation episode and is ready to be evaluated. 
+- To measure proximity, use the geodesic distance, i.e., the shortest-path distance in the environment 
+- Adopt Success weighted by Path Length (SPL) as primary measure of navigation performance 
+- structure of the internal representation that the agent constructs and maintains
 
 
 <!--- *********************************************************************************************************************************************** --->
@@ -171,6 +183,10 @@
 ### Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments
 [link](https://arxiv.org/pdf/1711.07280.pdf)
 
+#### Intro 
+
+- visually grounded sequence-to-sequence translation problems
+- Matterport3D Simulator, based on real imagery -> Room-to-Room (R2R) dataset 
 
 
 <!--- *********************************************************************************************************************************************** --->
@@ -178,6 +194,10 @@
 
 ### How agents see things: On visual representations in an emergent language game
 [link](https://arxiv.org/pdf/1808.10696.pdf)
+
+#### Intro 
+
+- 
 
 
 
