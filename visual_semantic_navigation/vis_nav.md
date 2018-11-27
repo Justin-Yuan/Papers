@@ -183,7 +183,7 @@
 ### Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments
 [link](https://arxiv.org/pdf/1711.07280.pdf)
 
-#### Intro 
+#### Intro  
 
 - visually grounded sequence-to-sequence translation problems
 - Matterport3D Simulator, based on real imagery -> Room-to-Room (R2R) dataset 
@@ -197,8 +197,8 @@
 
 #### Intro 
 
-- 
-
+- referential games of Lazaridou 
+- pay attention to visual semantics agents associate to the symbols they use 
 
 
 <!--- *********************************************************************************************************************************************** --->
@@ -207,3 +207,10 @@
 ### Virtual-to-Real: Learning to Control in Visual Semantic Segmentation
 [link](https://arxiv.org/pdf/1802.00285.pdf)
 
+#### Intro 
+
+- perception modeule and control module, related by using semantic image segmentation as the meta representation 
+
+#### Evaluation 
+
+- obstacle avoidance & target following 
