@@ -1,0 +1,46 @@
+### Graph R-CNN for Scene Graph Generation
+[link](https://arxiv.org/pdf/1808.00191.pdf)
+
+#### Intro 
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Scene Graph Generation by Iterative Message Passing
+[link](http://vision.stanford.edu/pdf/xu2017cvpr.pdf)
+
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Scene Graph Generation from Objects, Phrases and Region Captions
+[link](https://arxiv.org/pdf/1707.09700.pdf)
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Image Retrieval using Scene Graphs
+[link](https://hci.stanford.edu/publications/2015/scenegraphs/JohnsonCVPR2015.pdf)
+
+
+
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Scene Graph Generation by Belief RNNs
+[link](http://www.cs.tau.ac.il/~joberant/teaching/advanced_nlp_spring_2018/past_projects/scene_graph.pdf)
+
+
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
