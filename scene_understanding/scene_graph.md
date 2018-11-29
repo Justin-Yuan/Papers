@@ -3,7 +3,11 @@
 #### Visual Genome 
 [link](https://visualgenome.org/)
 
+#### COCO-Stuff 
+[link](https://github.com/nightrome/cocostuff)
 
+#### Visual Relationship Detection
+[link](https://cs.stanford.edu/people/ranjaykrishna/vrd/)
 
 
 <!--- *********************************************************************************************************************************************** --->
@@ -72,6 +76,67 @@
 ### Image Generation from Scene Graphs
 [link](https://arxiv.org/pdf/1804.01622.pdf)
 
+#### Intro 
+
+- challenges:
+    - method to process graph-structured input 
+    - ensure generated images respect the objects and relationships specified in graph 
+    - ensure synthesized images are realistic
+- 
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Tensorize, Factorize and Regularize: Robust Visual Relationship Learning
+[link](http://pages.cs.wisc.edu/~hwkim/papers/cvpr2018_hwang.pdf)
+
+
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Scenic: Language-Based Scene Generation
+[link](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2018/EECS-2018-8.pdf)
+
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Generating Semantically Precise Scene Graphs from Textual Descriptions for Improved Image Retrieval
+[link](http://anthology.aclweb.org/W/W15/W15-2812.pdf)
+
+
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Visual Relationship Detection with Language Priors
+[link](https://cs.stanford.edu/people/ranjaykrishna/vrd/vrd.pdf)
+
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Deep Variation-structured Reinforcement Learning for Visual Relationship and Attribute Detection
+[link](https://arxiv.org/pdf/1703.03054.pdf)
+
+
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
 
 
 
@@ -85,12 +150,6 @@
 <!--- *********************************************************************************************************************************************** --->
 --- 
 
-
-
-
-
-<!--- *********************************************************************************************************************************************** --->
---- 
 
 
 
