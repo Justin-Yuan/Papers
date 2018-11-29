@@ -13,12 +13,37 @@
 <!--- *********************************************************************************************************************************************** --->
 --- 
 
+### Image Retrieval using Scene Graphs
+[link](https://hci.stanford.edu/publications/2015/scenegraphs/JohnsonCVPR2015.pdf)
+
+#### Intro 
+
+- conditional random field (CRF), likelihoods of groundings used as ranking scores for retrieval
+- detailed semantics: objects, attributes, relationships 
+-  Replacing textual queries with scene graphs allows queries to describe the semantics of the desired image in precise detail without relying on unstructured text
+- scene graph and scene graph grounding 
+- need to measure the agreement between a query scene graph and an unannotated test image 
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
 ### Visual Genome 
 [link](https://visualgenome.org/static/paper/Visual_Genome.pdf)
 
 #### Intro 
 
--
+- 3 key elements 
+    - a grounding of visual concepts to language 
+    - more complete set of descriptions and QAs for each image based on multiple image regions 
+    - a formalized representation of the components of an image 
+- knowledge base representation in NLP to represent object relations -> scene graph 
+- all objects, attributes and relationships are canonicalized to its corresponding WordNet ID (synset ID)
+
+#### Modeling 
+
+- main components: region descriptions, objects, attributes, relationships, region graphs, scene graphs, question answer pairs
+- free-form QA (based on the entire image) & region-based QA, 6 types of question per image: what, where, how, when, who, why 
 
 
 <!--- *********************************************************************************************************************************************** --->
@@ -29,7 +54,32 @@
 
 #### Intro 
 
--
+- scene graph form an interpretable structured representation of the image that supports higher-level visual intelligence tasks 
+- leverage object-relationship regularities 
+
+#### Modeling 
+
+- model 
+    - object node extraction -> object region proposal 
+    - relationship edge pruning -> relationship proposal 
+    - graph context integration -> graph labeling 
+- relation proposal network (RePN), efficiently compute relatedness scores between object pairs, to prune unlikely scene graph connections
+- exploit estimated class distributions to infer relatedness, learning soft class-relationships priors, kernel trick 
+- non-maximal suppression to filter out object pairs with significant overlap 
+- attentional graph convolution network (aGCN), to propogate higher-order context, place attention on reliable edges and dampen influence of unlikely ones 
+- add skip-connect edges directly between all object nodes 
+- run both a visual and semantic aGCN, one with visual features and the other with pre-softmax outputs, set attention in semantic aGCN to be that fo the visual aGCN to modulate flow of semantic information based on visual cues 
+- loss
+    - same loss used in RPN: binary cross entropy on proposals and regression loss for anchors  
+    - binary cross entropy on relation proposals 
+    - 2 multi-class cross entropy losses for object classification and predicate classification 
+
+#### Evaluation 
+
+- recall of <subject, predicate, object> triplets (**SGGen**) 
+- recall of objects and predicates given groud truth object localizations (**PredCls**, **PhrCls**)
+- novel, more holistic metric (**SGGen+**), computes total recall for singleton entities (objects & predicates), pair entities <object, attribute>, triplet entities <subject, predicate, object>
+- SGGen is overly sensitive to label errors on objects with relationships 
 
 
 <!--- *********************************************************************************************************************************************** --->
@@ -37,6 +87,11 @@
 
 ### Scene Graph Generation by Iterative Message Passing
 [link](http://vision.stanford.edu/pdf/xu2017cvpr.pdf)
+
+#### Intro 
+
+
+#### Modeling 
 
 
 
@@ -46,17 +101,6 @@
 
 ### Scene Graph Generation from Objects, Phrases and Region Captions
 [link](https://arxiv.org/pdf/1707.09700.pdf)
-
-
-
-<!--- *********************************************************************************************************************************************** --->
---- 
-
-### Image Retrieval using Scene Graphs
-[link](https://hci.stanford.edu/publications/2015/scenegraphs/JohnsonCVPR2015.pdf)
-
-
-
 
 
 
