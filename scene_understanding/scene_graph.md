@@ -203,27 +203,6 @@
 <!--- *********************************************************************************************************************************************** --->
 --- 
 
-### Tensorize, Factorize and Regularize: Robust Visual Relationship Learning
-[link](http://pages.cs.wisc.edu/~hwkim/papers/cvpr2018_hwang.pdf)
-
-#### Intro 
-
-- 
-
-
-
-<!--- *********************************************************************************************************************************************** --->
---- 
-
-### Scenic: Language-Based Scene Generation
-[link](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2018/EECS-2018-8.pdf)
-
-
-
-
-<!--- *********************************************************************************************************************************************** --->
---- 
-
 ### Generating Semantically Precise Scene Graphs from Textual Descriptions for Improved Image Retrieval
 [link](http://anthology.aclweb.org/W/W15/W15-2812.pdf)
 
@@ -322,6 +301,74 @@
 
 ### Neural Motifs: Scene Graph Parsing with Global Context
 [link](https://arxiv.org/pdf/1711.06640.pdf)
+
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Tensorize, Factorize and Regularize: Robust Visual Relationship Learning
+[link](http://pages.cs.wisc.edu/~hwkim/papers/cvpr2018_hwang.pdf)
+
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Scenic: Language-Based Scene Generation
+[link](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2018/EECS-2018-8.pdf)
+
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Shuffle-Then-Assemble: Learning Object-Agnostic Visual Relationship Features
+[link](http://openaccess.thecvf.com/content_ECCV_2018/papers/XU_YANG_Shuffle-Then-Assemble_Learning_Object-Agnostic_ECCV_2018_paper.pdf)
+
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### PPR-FCN: Weakly Supervised Visual Relation Detection via Parallel Pairwise R-FCN
+[link](https://arxiv.org/pdf/1708.01956.pdf)
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Weakly-supervised learning of visual relations
+[link](https://arxiv.org/pdf/1707.09472.pdf)
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### MAttNet: Modular Attention Network for Referring Expression Comprehension
+[link](https://arxiv.org/pdf/1801.08186.pdf)
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Context-Aware Visual Policy Network for Sequence-Level Image Captioning
+[link](https://arxiv.org/pdf/1808.05864.pdf)
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Learning to Compose Task-Specific Tree Structures
+[link](https://arxiv.org/pdf/1707.02786.pdf)
 
 
 
