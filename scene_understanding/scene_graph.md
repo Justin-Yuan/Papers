@@ -126,6 +126,27 @@
 - Multi-level Scene Description Network (MSDN), solve the 3 tasks jointly
 - leverage the spatial and semantic correlations of the visual features
 
+#### Modeling 
+
+- 3 parallel branch for 3 vision tasks, based on conv layers of VGG-16
+- Faster-RCNN for object detection 
+- entire process 
+    - region proposal -> 3 sets of proposals
+        - object region proposals
+        - phrase region proposals -> group N object proposals to N(N-1) object pairs 
+        - caption region proposals
+    - feature specialization -> 3 sets of FCs 
+    - dynamic graph construction -> connect 3 sets of regions (**subject-predicate-object** triplet)
+    - feature refinement -> 3 parallel steps for message passing 
+        - object refining 
+        - phrase refining 
+        - caption refining 
+    - final prediction (classify objects, predicates, generate captions)
+
+#### Evaluation 
+
+- Top-K recall, not using mAP since annotations of the relationships are incomplete, mAP will falsely penalize the positive but unlabeled predictions
+
 
 <!--- *********************************************************************************************************************************************** --->
 --- 
@@ -161,7 +182,22 @@
 - use graph convolution to process input graphs
 - compute a scene layout by predicting bounding boxes and segmentation masks for objects
 - convert layout to image with cascaded refinement network 
+- train adversarially against a pair of discriminator networks 
+- evaluate with Amazon Mechanical Turk, compared to StackGAN 
 
+#### Modeling 
+
+- embedding layer to convert scene graph nodes from categorical vector to dense vector 
+- graph convolution network to process embedding scene graph 
+- image discriminator ensures overall appearance of generated image is realistic 
+- object discriminator ensures each object in the image appears realistic, recognizable 
+- training 
+    - box loss -> L1 difference of ground-truth and predicted boxes 
+    - mask loss -> pixelwise cross-entropy on masks
+    - pixel loss -> L1 difference of ground-truth and generated images 
+    - image adversarial loss and 
+    - auxiliaryly classifier loss from 
+- augment scene graphs with **image** object, add **in image** relationships to connect each true object with the **image** object -> all scene graphs are connected 
 
 
 <!--- *********************************************************************************************************************************************** --->
@@ -170,7 +206,9 @@
 ### Tensorize, Factorize and Regularize: Robust Visual Relationship Learning
 [link](http://pages.cs.wisc.edu/~hwkim/papers/cvpr2018_hwang.pdf)
 
+#### Intro 
 
+-
 
 
 
@@ -189,8 +227,12 @@
 ### Generating Semantically Precise Scene Graphs from Textual Descriptions for Improved Image Retrieval
 [link](http://anthology.aclweb.org/W/W15/W15-2812.pdf)
 
+#### Intro 
 
-
+- parse scene description to scene graph
+- Including relations and attributes in the query graph outperforms a model that only considers objects 
+- parsing to scene graphs can be used to generate 3D scenes 
+- parse image description to dependency trees to produce semantic graph 
 
 
 <!--- *********************************************************************************************************************************************** --->
@@ -199,7 +241,10 @@
 ### Visual Relationship Detection with Language Priors
 [link](https://cs.stanford.edu/people/ranjaykrishna/vrd/vrd.pdf)
 
+#### Intro 
 
+- visual appearance module, learns appearance of objects and predicates and fuses them together to jointly predict relationships 
+- propose a language module, use pre-trained word vectors to cast relationships into vector, similar relationships are optimized to be close to each other
 
 
 <!--- *********************************************************************************************************************************************** --->
@@ -208,28 +253,63 @@
 ### Deep Variation-structured Reinforcement Learning for Visual Relationship and Attribute Detection
 [link](https://arxiv.org/pdf/1703.03054.pdf)
 
+**Need to look into more carefully**
 
+#### Intro 
+
+- sequentially detect relationship and attribute instances by exploiting global context cues 
+- ambiguity-aware object mining scheme to assign each object with the most appropriate category given the global scene context 
+- VRL can be generalized into an unsupervised learning framework to learn from unlabeled images -> interesting 
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Neural scene representation and rendering
+[link](https://deepmind.com/blog/neural-scene-representation-and-rendering/)
+
+#### Intro 
+
+-
 
 
 
 <!--- *********************************************************************************************************************************************** --->
 --- 
 
+### Neural Scene De-rendering
+[link](http://nsd.csail.mit.edu/papers/nsd_cvpr.pdf)
+
+#### Intro 
+
+-
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Picture: A Probabilistic Programming Language for Scene Perception
+[link](https://mrkulk.github.io/www_cvpr15/1999.pdf)
+
+#### Intro 
+
+-
 
 
 
 <!--- *********************************************************************************************************************************************** --->
 --- 
 
+### Configurable 3D Scene Synthesis and 2D Image Rendering with Per-Pixel Ground Truth using Stochastic Grammars
+[link](https://arxiv.org/pdf/1704.00112.pdf)
 
+#### Intro 
 
+-
 
 
 <!--- *********************************************************************************************************************************************** --->
 --- 
-
-
-
 
 
 
