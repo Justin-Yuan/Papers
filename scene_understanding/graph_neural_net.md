@@ -75,6 +75,8 @@
 <!--- *********************************************************************************************************************************************** --->
 --- 
 
+### Graph Learning Network: A Structure Learning Algorithm 
+[link](https://openreview.net/pdf?id=HylRk2A5FQ)
 
 
 
