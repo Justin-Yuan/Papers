@@ -9,6 +9,9 @@
 #### Visual Relationship Detection
 [link](https://cs.stanford.edu/people/ranjaykrishna/vrd/)
 
+#### NYU Depth v2 dataset
+[link](https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html)
+
 
 <!--- *********************************************************************************************************************************************** --->
 --- 
@@ -90,10 +93,25 @@
 
 #### Intro 
 
+- pass messages containing contextual informatino between a pair of bipartite sub-graphs of the scene graph, iteratively refine the predictions using RNN 
+- can be considered as a more general framework for graph generation problem 
 
 #### Modeling 
 
+- all nodes share the same GRU weights, all edges share the other set of GRU weights 
+- a message pooling function to dynamically aggregate hidden GRU states into messages 
+- disjoint sub-graphs: primal graph defines channels for passing message from edge GRUs to node GRUs, dual graph does the other way round 
+- use mean field to perform approximate inference 
+- randomly select 128 boxes from NMS as object proposals
 
+#### Evaluation 
+
+- metrics
+    - R@k, measures the fraction of ground-truth relationship triplets (subjectpredicate-object) that appear among the top k most confident triplet predictions in an image.
+    - predicate classification (**PREDCLS**), predict the predicates of all pairwise relationships of a set of localized objects 
+    - scene graph classification (**SGCLS**), predict the prediate as well as the object categories of the subject and the object in every pairwise relationship given a set of localized objects 
+    - scene graph generation (**SGGEN**), detect a set of objects and predict the predicate between each pair of the detected objects. 
+- performance of final model peaks at training with 2 iterations and degrades afterwards 
 
 
 <!--- *********************************************************************************************************************************************** --->
@@ -102,6 +120,11 @@
 ### Scene Graph Generation from Objects, Phrases and Region Captions
 [link](https://arxiv.org/pdf/1707.09700.pdf)
 
+#### Intro 
+
+- 3 levels of scene understanding: object detection, scene graph generation, region captioning 
+- Multi-level Scene Description Network (MSDN), solve the 3 tasks jointly
+- leverage the spatial and semantic correlations of the visual features
 
 
 <!--- *********************************************************************************************************************************************** --->
