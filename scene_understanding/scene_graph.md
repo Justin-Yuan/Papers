@@ -293,7 +293,15 @@
 ### Visual Translation Embedding Network for Visual Relation Detection
 [link](https://arxiv.org/pdf/1702.08319.pdf)
 
+#### Intro 
 
+- relation modeled as a vector translation, subject + predict ~ object 
+- feature extraction layer for class probabilities, locations(bbox coordinates and scales), RoI visual features 
+
+#### Modeling 
+
+- projection matrices from feature space to relation space 
+- use large-margn metriclearning loss function 
 
 
 <!--- *********************************************************************************************************************************************** --->
@@ -302,7 +310,14 @@
 ### Neural Motifs: Scene Graph Parsing with Global Context
 [link](https://arxiv.org/pdf/1711.06640.pdf)
 
+**useful analysis to Visual Genome statistics**
 
+#### Intro 
+
+- motifs: regulary appearing substructures in scene graphs 
+- key is to encode global context that can directly inform the local predictors 
+- Visual Genome, predominant relations are geometric and possessive 
+- use bidirectional LSTM to produce global contexts 
 
 
 <!--- *********************************************************************************************************************************************** --->
@@ -354,6 +369,11 @@
 ### MAttNet: Modular Attention Network for Referring Expression Comprehension
 [link](https://arxiv.org/pdf/1801.08186.pdf)
 
+#### Intro 
+
+- decompose phrase into: subject appearance, location, relationship to other objects 
+- 2 types of attention: language-based attention to learn module weights & word/phrase attention + visual attention 
+- 
 
 
 <!--- *********************************************************************************************************************************************** --->
@@ -394,20 +414,71 @@
 ### GLoMo: Unsupervisedly Learned Relational Graphs as Transferable Representations
 [link](https://arxiv.org/pdf/1806.05662.pdf)
 
+**Very cool idea**
+
 #### Intro 
 
--
+- learning generic latent relational graphs, capture dependencies between pairs of data units from large-scale data
+- transfer graphs to downstream tasks, graphs multiplied by task-specific features to produce structure-aware features 
+- nodes of a latent graph are input units, task is to learn an affinity matrix where weights capture dependencies between pairs of input units 
+- affinity matrix is asymmetric, representing a directed weighted graph 
+- graph predictor network & feature predictor network 
+- graph predictor network takes input, produce set of graphs 
+- feature predictor network takes set of graphs and input, perform a predictive task 
+
+#### Modeling 
+
+- graph predictor = key CNN + query CNN 
+- feature predictor = zero-th layer features are embeddings of x + affinity matrix is combined with current features to compute the next-layer features 
+- RNN decoder maximizes conditional log proability of context prediction in an auto-regressive fashion 
+- key points 
+    - decoupling graphs and features 
+    - sparisity using squared ReLU activation 
+    - Hierarchical graph representations with multiple layers of graphs 
+    - Unit-level objectives, impose context prediction objective on each unit 
+    - Sequence prediction, predict the context of some length 
 
 
 <!--- *********************************************************************************************************************************************** --->
 --- 
 
+### 3D-Aware Scene Manipulation via Inverse Graphics
+[link](http://papers.nips.cc/paper/7459-3d-aware-scene-manipulation-via-inverse-graphics.pdf)
 
+**very similar idea**
+
+#### Intro 
+
+- interpreable expressive, disentangled (semantics, geometry, appearance) scene representation, contaisn comprehensive structural and textural information for each object
+-  scene encoder for inverse graphics, decoder = differentiable shape renderer + neural texture generator
+- 3D scene de-rendering networks (3D-SDN)
+
+#### Modeling 
+
+- semantic branch -> Dilated Residual Networks (DRN) for semantic segmentation 
+- geometric branch -> Mask-RCNN for object proposal generation, 8 object meshes as car CAD models from ShapeNet 
+- textural branch 
+- VGG network as feature extractor 
+
+#### Evaluation 
+
+- evaluated on Virtual KITTI and Cityscapes 
+- built **Virtual KITTI Image Editing Benchmark**
+- learned representations can be useful for image reasoning, captining, analogy-making 
+
+#### Future Work 
+
+- handle uncommon object appearance and pose 
+- deal with deformable shapes, e.g. human bodies 
 
 
 <!--- *********************************************************************************************************************************************** --->
 --- 
 
+### Learning Hierarchical Semantic Image Manipulation through Structured Representations
+[link](http://papers.nips.cc/paper/7536-learning-hierarchical-semantic-image-manipulation-through-structured-representations.pdf)
+
+**very similar idea**
 
 
 <!--- *********************************************************************************************************************************************** --->
