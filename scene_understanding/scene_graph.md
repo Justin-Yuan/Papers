@@ -93,7 +93,7 @@
 
 #### Intro 
 
-- pass messages containing contextual informatino between a pair of bipartite sub-graphs of the scene graph, iteratively refine the predictions using RNN 
+- pass messages containing contextual information between a pair of bipartite sub-graphs of the scene graph, iteratively refine the predictions using RNN 
 - can be considered as a more general framework for graph generation problem 
 
 #### Modeling 
@@ -450,7 +450,7 @@
 #### Intro 
 
 - interpreable expressive, disentangled (semantics, geometry, appearance) scene representation, contaisn comprehensive structural and textural information for each object
--  scene encoder for inverse graphics, decoder = differentiable shape renderer + neural texture generator
+- scene encoder for inverse graphics, decoder = differentiable shape renderer + neural texture generator
 - 3D scene de-rendering networks (3D-SDN)
 
 #### Modeling 
@@ -524,7 +524,7 @@
 
 #### Intro 
 
-- existing methods exploit visual context by modeling message passing among objecats; scene dynamic is not properly learned by using the prevailing corss-entropy based supervised learning paradigm, which is not sensitive to graph inconsistency
+- existing methods exploit visual context by modeling message passing among objects; scene dynamic is not properly learned by using the prevailing cross-entropy based supervised learning paradigm, which is not sensitive to graph inconsistency
 - 2 inherent mismatches
     - coherent objective v.s. independent reward
     - local action v.s. global pooling reward 
@@ -553,6 +553,26 @@
 <!--- *********************************************************************************************************************************************** --->
 --- 
 
+### Deep Structured Generative Models
+[link](https://arxiv.org/pdf/1807.03877.pdf)
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Image Generation from Layout
+[link](https://arxiv.org/pdf/1811.11389.pdf)
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+### Detecting and Recognizing Human-Object Interactions
+[link](https://arxiv.org/pdf/1704.07333.pdf)
+
+***important work***
 
 
 
@@ -564,6 +584,13 @@
 
 <!--- *********************************************************************************************************************************************** --->
 --- 
+
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
 
 
 
