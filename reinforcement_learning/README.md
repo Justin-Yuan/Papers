@@ -1,34 +1,54 @@
-### How to train your MAML 
-[link](https://arxiv.org/pdf/1810.09502.pdf)
+# Reinforcement Learning
 
-#### Intro 
+- [Baselines](#baselines)
+    - [2019 Papers](#2019-rlil-papers)
 
-
-<!--- *********************************************************************************************************************************************** --->
---- 
-
-### Probabilistic Model-Agnostic Meta-Learning
-[link](https://arxiv.org/pdf/1806.02817.pdf)
-
-**very theory-guided & math-heavy** 
-
-#### Intro 
-
-- sample models for a new task from a model distribution 
-- reframing MAML as a graphical model inference problem 
-- explicitly train a hierarchical Bayesian model over weights, wehre a posterior task-specific parameter distribution is inferred at meta-test time conditioned on a learned weight prior and a (few-shot) training set 
-
-
-<!--- *********************************************************************************************************************************************** --->
---- 
-
+- [Miscellaneous](#miscellaneous)
+    - [2019 Papers](#2019-misc-papers)
 
 
 
 <!--- *********************************************************************************************************************************************** --->
 --- 
 
+# Baselines
 
+## 2019 Papers
+
+Late-year
+
+- [Addressing Function Approximation Error in Actor-Critic Methods]()
+- [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor]()
+- [Rainbow: Combining Improvements in Deep Reinforcement Learning]()
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+
+# Curiosity
+
+## 2019 DL Papers
+
+- [Large-Scale Study of Curiosity-Driven Learning]() 
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+# Distributed RL 
+
+- [IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures]()
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+
+# Hierarchical RL 
+
+- [Data-Efficient Hierarchical Reinforcement Learning ]()
 
 
 
@@ -37,13 +57,15 @@
 
 
 
+# Multi-agent RL 
+
+
+- [Deep Multi-Agent Reinforcement Learning with Relevance Graphs]()
+
 
 
 <!--- *********************************************************************************************************************************************** --->
 --- 
 
 
-
-
-<!--- *********************************************************************************************************************************************** --->
---- 
+# Miscellaneous 
