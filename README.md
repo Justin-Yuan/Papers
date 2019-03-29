@@ -1,4 +1,5 @@
 # Papers
+
 Collection of my reading notes, reference to [summary of ML papers I've read](https://github.com/kweonwooj/papers)
 Inspired by [Denny Britz] and [Daniel Seita].
 
@@ -22,66 +23,113 @@ Papers are arranged according to three broad categories and then further numbere
 14. What are your thoughts on the results? Do they seem valid?
 
 
-Contents:
+<!--- *********************************************************************************************************************************************** --->
+--- 
 
-- [Reinforcement and Imitation Learning](#reinforcement-learning-and-imitation-learning)
-    - [2019 Papers](#2019-rlil-papers)
-    - [2018 Papers](#2018-rlil-papers)
-    - [2017 Papers](#2017-rlil-papers)
-    - [2016 Papers](#2016-rlil-papers)
-    - [2015 Papers](#2015-rlil-papers)
-    - [2014 and Earlier](#2014-and-earlier-rlil-papers)
-- [Deep Learning](#deep-learning)
-    - [2019 Papers](#2019-dl-papers)
-    - [2018 Papers](#2018-dl-papers)
-    - [2017 Papers](#2017-dl-papers)
-    - [2016 Papers](#2016-dl-papers)
-    - [2015 Papers](#2015-dl-papers)
-    - [2014 and Earlier](#2014-and-earlier-dl-papers)
+
+# Contents:
+
+- [Computer Vision](#computer-vision)
+    - [2019 Papers](#2019-cv-papers)
+    - [2018 Papers](#2018-cv-papers)
+
+- [Reinforcement Learning](#reinforcement-learning)
+    - [2019 Papers](#2019-rl-papers)
+    - [2018 Papers](#2018-rl-papers)
+
+- [Vision Language](#vision-language)
+    - [2019 Papers](#2019-vl-papers)
+    - [2018 Papers](#2018-vl-papers)
+
 - [Miscellaneous](#miscellaneous)
     - [2019 Papers](#2019-misc-papers)
-    - [2018 Papers](#2018-misc-papers)
-    - [2017 Papers](#2017-misc-papers)
-    - [2016 Papers](#2016-misc-papers)
-    - [2015 Papers](#2015-misc-papers)
-    - [2014 Papers](#2014-misc-papers)
-    - [2013 and Earlier](#2013-and-earlier-misc-papers)
 
 
-# Reinforcement Learning and Imitation Learning
 
-## 2019 RL/IL Papers
+<!--- *********************************************************************************************************************************************** --->
+--- 
 
-- [Off-Policy Deep Reinforcement Learning Without Exploration](https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Where_Off-Policy_DeepRL_Fails.md) arXiv (5)
-- [Visual Foresight: Model-Based Deep Reinforcement Learning for Vision-Based Robotic Control](https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Visual_Foresight_MPC.md), arXiv (4)
-- [Residual Reinforcement Learning for Robot Control](https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Residual_Reinforcement_Learning_for_Robot_Control.md), ICRA 2019 (3)
-- [Large-Scale Study of Curiosity-Driven Learning](https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Large-Scale_Study_of_Curiosity-Driven_Learning.md), ICLR 2019 (4)
-- [Exploration by Random Network Distillation](https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Exploration_by_Random_Network_Distillation.md), ICLR 2019 (4)
-- [Automatically Composing Representation Transformations as a Means for Generalization](https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Automatically_Composing_Representation_Transformations_as_a_Means_for_Generalization.md), ICLR 2019 (2)
-- [Diversity is All You Need: Learning Skills without a Reward Function](https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Diversity_is_All_You_Need_Learning_Skills_without_a_Reward_Function.md), ICLR 2019 (4)
-- [Multi-task Deep Reinforcement Learning with PopArt](https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Multi-task_Deep_Reinforcement_Learning_with_PopArt.md), AAAI 2019 (4)
+# Computer Vision
 
-## 2018 RL/IL Papers
-
-Late-year
+## 2019 CV Papers
 
 
-# Deep Learning
+## 2018 CV Papers
 
-## 2019 DL Papers
+- [Generating Semantically Precise Scene Graphs from Textual Descriptions for Improved Image Retrieval]()
+- [Graph R-CNN for Scene Graph Generation]()
+- [Image Generation from Scene Graphs]()
+- [Image Retrieval using Scene Graphs]()
+- [Learning to Compose Dynamic Tree Structures for Visual Contexts]()
+- [Neural Motifs: Scene Graph Parsing with Global Context]()
+- [Scene Dynamics: Counterfactual Critic Multi-Agent Training for Scene Graph Generation]()
+- [Scene Graph Generation by Belief RNNs]()
+- [Scene Graph Generation by Iterative Message Passing]()
+- [Scene Graph Generation from Objects, Phrases and Region Captions]()
+- [Visual Genome]()
+- [Visual Relationship Detection with Language Priors]()
+- [Visual Translation Embedding Network for Visual Relation Detection]()
 
 
-## 2018 DL Papers
-
-- [Stochastic Adversarial Video Prediction](https://github.com/DanielTakeshi/Paper_Notes/blob/master/deep_learning/Stochastic_Adversarial_Video_Prediction.md), arXiv 2018 (3)
-- [Learning to Teach With Dynamic Loss Functions](https://github.com/DanielTakeshi/Paper_Notes/blob/master/deep_learning/Learning_to_Teach_With_Dynamic_Loss_Functions.md), NeurIPS 2018 (2)
-- [Skill Rating for Generative Models](https://github.com/DanielTakeshi/Paper_Notes/blob/master/deep_learning/Skill_Rating_for_Generative_Models.md), arXiv 2018 (3)
-- [Born Again Neural Networks](https://github.com/DanielTakeshi/Paper_Notes/blob/master/deep_learning/Born_Again_Neural_Networks.md), ICML 2018 (5)
-- Large Scale Distributed Neural Network Training Through Online Distillation, ICLR 2018 (1)
-- [Learning to Teach](https://github.com/DanielTakeshi/Paper_Notes/blob/master/deep_learning/Learning_to_Teach.md), ICLR 2018 (5)
-- [Interpretable and Pedagogical Examples](https://github.com/DanielTakeshi/Paper_Notes/blob/master/deep_learning/Interpretable_and_Pedagogical_Examples.md) arXiv 2018 (5)
 
 
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+# Reinforcement Learning
+
+## 2019 RL Papers
+
+
+## 2018 RL Papers
+
+- [Addressing Function Approximation Error in Actor-Critic Methods]()
+- [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor]()
+- [Rainbow: Combining Improvements in Deep Reinforcement Learning]()
+- [Visual Reinforcement Learning with Imagined Goals]()
+
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+# Vision Language 
+
+## 2019 VL Papers 
+
+
+
+## 2018 VL Papers
+
+- [Building Generalizable Agents With A Realistic And Rich 3D Environment]() 
+- [Embodies Question Answering]()
+- [How agents see things: On visual representations in an emergent language game]()
+- [Learning a Semantic Prior for Guided Navigation]()
+- [Learning to Learn How to Learn: Self-Adaptive Visual Navigation Using Meta-Learning]()
+- [Learning to Navigate in Cities without a Map]()
+- [On Evaluation of Embodied Navigation Agents]()
+- [Target-driven Visual Navigation in Indoor Scenes using Deep Reinforcement Learning]()
+- [TOUCHDOWN: Natural Language Navigation and Spatial Reasoning in Visual Street Environments]()
+- [Virtual-to-Real: Learning to Control in Visual Semantic Segmentation]()
+- [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments]()
+- [Visual Semantic Navigation Using Scene Priors]()
+
+
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
+
+# Miscellaneous
+
+
+## 2019 Misc Papers 
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
 
 
 [1]:https://blog.acolyer.org/about/

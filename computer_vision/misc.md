@@ -108,7 +108,32 @@
 <!--- *********************************************************************************************************************************************** --->
 --- 
 
+### GLoMo: Unsupervisedly Learned Relational Graphs as Transferable Representations
+[link](https://arxiv.org/pdf/1806.05662.pdf)
 
+**Very cool idea**
+
+#### Intro 
+
+- learning generic latent relational graphs, capture dependencies between pairs of data units from large-scale data
+- transfer graphs to downstream tasks, graphs multiplied by task-specific features to produce structure-aware features 
+- nodes of a latent graph are input units, task is to learn an affinity matrix where weights capture dependencies between pairs of input units 
+- affinity matrix is asymmetric, representing a directed weighted graph 
+- graph predictor network & feature predictor network 
+- graph predictor network takes input, produce set of graphs 
+- feature predictor network takes set of graphs and input, perform a predictive task 
+
+#### Modeling 
+
+- graph predictor = key CNN + query CNN 
+- feature predictor = zero-th layer features are embeddings of x + affinity matrix is combined with current features to compute the next-layer features 
+- RNN decoder maximizes conditional log proability of context prediction in an auto-regressive fashion 
+- key points 
+    - decoupling graphs and features 
+    - sparisity using squared ReLU activation 
+    - Hierarchical graph representations with multiple layers of graphs 
+    - Unit-level objectives, impose context prediction objective on each unit 
+    - Sequence prediction, predict the context of some length 
 
 
 <!--- *********************************************************************************************************************************************** --->

@@ -1,0 +1,24 @@
+# Target-driven Visual Navigation in Indoor Scenes using Deep Reinforcement Learning 
+[link](https://arxiv.org/pdf/1609.05143.pdf)
+
+## Intro 
+
+- AI2-THOR -> Unity 3D + Tensorflow direct communication  
+- policy conditions on current state and target, no need to re-train 
+
+## Modeling 
+
+- observation and target/goal are both images 
+- minimize trajectory length to navigation targets, goal reaching reward + time penalty 
+- Siamese network, map observation and target images to shared embedding space then joint them 
+- scene-specific layers for different scenes
+- A3C, training with parallel threads run different navigation target 
+
+## Evaluation 
+
+- metric: trajectory length, success rate  
+- t-SNE visualization on observation embeddings, preserves spatial correlation! 
+
+## Future Work 
+
+- agent to learn physical interaction & object manipulation 

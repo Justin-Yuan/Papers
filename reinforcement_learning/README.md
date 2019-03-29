@@ -1,10 +1,13 @@
 # Reinforcement Learning
 
 - [Baselines](#baselines)
-    - [2019 Papers](#2019-rlil-papers)
-
+    - [2019 Papers](#2019-baseline-papers)
+    - [2018 Papers](#2018-baseline-papers)
+- [Curiosity](#curiosity)
+- [Distributed RL](#distributed-rl)
+- [Hierarchical RL](#hierarchical-rl)
+- [Multi-agent RL](#multi-agent-rl)
 - [Miscellaneous](#miscellaneous)
-    - [2019 Papers](#2019-misc-papers)
 
 
 
@@ -13,7 +16,10 @@
 
 # Baselines
 
-## 2019 Papers
+## 2019 Baseline Papers
+
+
+## 2018 Baseline Papers
 
 Late-year
 
@@ -27,8 +33,6 @@ Late-year
 
 
 # Curiosity
-
-## 2019 DL Papers
 
 - [Large-Scale Study of Curiosity-Driven Learning]() 
 
