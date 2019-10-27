@@ -1,6 +1,6 @@
 # Papers
 
-sdfsdf [d](2019-misc-papers)
+sdfsdf [d](miscellaneous)
 sdfsdf [dd](pp)
 
 Collection of my reading notes, reference to [summary of ML papers I've read](https://github.com/kweonwooj/papers)
@@ -127,7 +127,7 @@ Papers are arranged according to three broad categories and then further numbere
 
 # Miscellaneous
 
-<a name="pp"></a> 
+<a name="pp">sf</a> 
 
 ## 2019 Misc Papers 
 
