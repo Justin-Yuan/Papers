@@ -1,8 +1,5 @@
 # Papers
 
-sdfsdf [d](#miscellaneous)
-sdfsdf [dd](#pp)
-
 Collection of my reading notes, reference to [summary of ML papers I've read](https://github.com/kweonwooj/papers)
 Inspired by [Denny Britz] and [Daniel Seita].
 
@@ -126,9 +123,8 @@ Papers are arranged according to three broad categories and then further numbere
 --- 
 
 # Miscellaneous
-sdfsf
-<a name="pp">sf</a> 
-sdfsdf
+
+
 ## 2019 Misc Papers 
 
 
