@@ -3,7 +3,9 @@
 Collection of my reading notes, reference to [summary of ML papers I've read](https://github.com/kweonwooj/papers)
 Inspired by [Denny Britz] and [Daniel Seita].
 
-Papers are arranged according to three broad categories and then further numbered on a (1) to (5) scale where a (1) means I have only barely skimmed it, while a (5) means I feel confident that I understand almost everything about the paper. Within a single year, these papers should be organized according to publication date.
+<!--- *********************************************************************************************************************************************** --->
+--- 
+## Reading Guide 
 
 #### Questions to guide through reading (Reference: [Guide to Reading Academic Research Papers](https://towardsdatascience.com/guide-to-reading-academic-research-papers-c69c21619de6))
 
