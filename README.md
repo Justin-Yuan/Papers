@@ -25,112 +25,20 @@ Papers are arranged according to three broad categories and then further numbere
 
 <!--- *********************************************************************************************************************************************** --->
 --- 
+## Workflow 
 
-
-# Contents:
-
-- [Computer Vision](#computer-vision)
-    - [2019 Papers](#2019-cv-papers)
-    - [2018 Papers](#2018-cv-papers)
-
-- [Reinforcement Learning](#reinforcement-learning)
-    - [2019 Papers](#2019-rl-papers)
-    - [2018 Papers](#2018-rl-papers)
-
-- [Vision Language](#vision-language)
-    - [2019 Papers](#2019-vl-papers)
-    - [2018 Papers](#2018-vl-papers)
-
-- [Miscellaneous](#miscellaneous)
-    - [2019 Papers](#2019-misc-papers)
-
-
-
-<!--- *********************************************************************************************************************************************** --->
---- 
-
-# Computer Vision
-
-## 2019 CV Papers
-
-
-## 2018 CV Papers
-
-- [Generating Semantically Precise Scene Graphs from Textual Descriptions for Improved Image Retrieval]()
-- [Graph R-CNN for Scene Graph Generation]()
-- [Image Generation from Scene Graphs]()
-- [Image Retrieval using Scene Graphs]()
-- [Learning to Compose Dynamic Tree Structures for Visual Contexts]()
-- [Neural Motifs: Scene Graph Parsing with Global Context]()
-- [Scene Dynamics: Counterfactual Critic Multi-Agent Training for Scene Graph Generation]()
-- [Scene Graph Generation by Belief RNNs]()
-- [Scene Graph Generation by Iterative Message Passing]()
-- [Scene Graph Generation from Objects, Phrases and Region Captions]()
-- [Visual Genome]()
-- [Visual Relationship Detection with Language Priors]()
-- [Visual Translation Embedding Network for Visual Relation Detection]()
-
-
-
-
-
-<!--- *********************************************************************************************************************************************** --->
---- 
-
-# Reinforcement Learning
-
-## 2019 RL Papers
-
-
-## 2018 RL Papers
-
-- [Addressing Function Approximation Error in Actor-Critic Methods]()
-- [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor]()
-- [Rainbow: Combining Improvements in Deep Reinforcement Learning]()
-- [Visual Reinforcement Learning with Imagined Goals]()
-
-
-
-
-<!--- *********************************************************************************************************************************************** --->
---- 
-
-# Vision Language 
-
-## 2019 VL Papers 
-
-
-
-## 2018 VL Papers
-
-- [Building Generalizable Agents With A Realistic And Rich 3D Environment]() 
-- [Embodies Question Answering]()
-- [How agents see things: On visual representations in an emergent language game]()
-- [Learning a Semantic Prior for Guided Navigation]()
-- [Learning to Learn How to Learn: Self-Adaptive Visual Navigation Using Meta-Learning]()
-- [Learning to Navigate in Cities without a Map]()
-- [On Evaluation of Embodied Navigation Agents]()
-- [Target-driven Visual Navigation in Indoor Scenes using Deep Reinforcement Learning]()
-- [TOUCHDOWN: Natural Language Navigation and Spatial Reasoning in Visual Street Environments]()
-- [Virtual-to-Real: Learning to Control in Visual Semantic Segmentation]()
-- [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments]()
-- [Visual Semantic Navigation Using Scene Priors]()
-
-
-
-
-<!--- *********************************************************************************************************************************************** --->
---- 
-
-# Miscellaneous
-
-
-## 2019 Misc Papers 
+1. copy name of paper 
+2. use `pnote <paper name>` to open new note doc for editing 
+3. new note doc is in *daily/* by default, organize them to *database* at the end of the day 
 
 
 <!--- *********************************************************************************************************************************************** --->
 --- 
 
 
+
+
+<!--- *********************************************************************************************************************************************** --->
+--- 
 [1]:https://blog.acolyer.org/about/
 [2]:https://github.com/dennybritz/deeplearning-papernotes
