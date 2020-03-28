@@ -4,7 +4,6 @@ Collection of my reading notes, reference to [summary of ML papers I've read](ht
 Inspired by [Denny Britz] and [Daniel Seita].
 
 <!--- *********************************************************************************************************************************************** --->
---- 
 ## Reading Guide 
 
 #### Questions to guide through reading (Reference: [Guide to Reading Academic Research Papers](https://towardsdatascience.com/guide-to-reading-academic-research-papers-c69c21619de6))
@@ -26,7 +25,6 @@ Inspired by [Denny Britz] and [Daniel Seita].
 
 
 <!--- *********************************************************************************************************************************************** --->
---- 
 ## Workflow 
 
 1. copy name of paper 
@@ -35,12 +33,11 @@ Inspired by [Denny Britz] and [Daniel Seita].
 
 
 <!--- *********************************************************************************************************************************************** --->
---- 
 
 
 
 
 <!--- *********************************************************************************************************************************************** --->
---- 
+
 [1]:https://blog.acolyer.org/about/
 [2]:https://github.com/dennybritz/deeplearning-papernotes
