@@ -48,4 +48,18 @@ pnote () {
 	code $PAPER_PATH
 	# go back 
 	cd $CUR_DIR
+	case "$(uname -s)" in
+		Darwin)
+			echo "$@" | pbcopy
+			;;
+		Linux)
+			echo "$@" | xclip -selection c
+			;;
+		CYGWIN*|MINGW32*|MSYS*|MINGW*)
+			echo 'MS Windows'
+			;;
+		*)
+			echo 'Other OS' 
+			;;
+	esac
 }

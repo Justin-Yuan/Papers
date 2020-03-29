@@ -41,3 +41,12 @@ Inspired by [Denny Britz] and [Daniel Seita].
 
 [1]:https://blog.acolyer.org/about/
 [2]:https://github.com/dennybritz/deeplearning-papernotes
+
+
+
+<!-- **********************   Misc   *************************** -->
+<!--
+to do in-page referencing
+    [XX](#1)
+    <a name="1"></a> 
+-->
