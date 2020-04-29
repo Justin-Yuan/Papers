@@ -34,6 +34,22 @@ Inspired by [Denny Britz] and [Daniel Seita].
 
 <!--- *********************************************************************************************************************************************** --->
 
+## Summer Plan 
+
+- [week #1][] PRML 
+- [week #2][] CLRS
+- [week #3][] RL
+- [week #4][] C++
+- [week #5][] robotics
+- [week #6][] statistics
+- [week #7][] optimization 
+- [week #8][] algebra 
+- [week #9][] stochastic calculus 
+- [week #10][] differential geometry
+- [week #11][] information theory
+- [week #12][] group theory 
+- [week #13][] analysis
+- [week #14][] game theory 
 
 
 
