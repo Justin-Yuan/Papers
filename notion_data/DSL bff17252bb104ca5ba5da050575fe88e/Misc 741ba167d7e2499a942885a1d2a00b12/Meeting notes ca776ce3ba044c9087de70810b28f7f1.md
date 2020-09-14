@@ -1,0 +1,3 @@
+# Meeting notes
+
+[08/19/2020 meeting](Meeting%20notes%20ca776ce3ba044c9087de70810b28f7f1/08%2019%202020%20meeting%203e89bec6ed954663a1e14852b11b92b8.md)
