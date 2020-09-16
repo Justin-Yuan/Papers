@@ -14,3 +14,7 @@ pom.xml.asc
 .cpcache/
 .vscode/
 .DS_Store
+
+archived
+archived/
+archived/*
